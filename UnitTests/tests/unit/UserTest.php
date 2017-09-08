@@ -1,7 +1,10 @@
 <?php
-use PHPUnit\Framework\TestCase;
 
-class UserTest extends TestCase
+// namespace htdocs\myStudy\UnitTests\tests\unit;
+
+// use PHPUnit\Framework\TestCase;
+
+class UserTest extends \PHPUnit_Framework_TestCase
 {
     
     public function testFirstName()
