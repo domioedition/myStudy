@@ -32,5 +32,5 @@ echo "Article ID: ".$article->showArticle(341);
 $a1 = new \Controller\AA\BB\CC\Article;
 $a1->someProperty = "test1";
 echo "<br>".$a1->someProperty;
-
+echo "qwerty";
 ?>
