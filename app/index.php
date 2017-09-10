@@ -18,14 +18,15 @@ spl_autoload_register(function($class){
   }
 
 });
-
+use Controller\Article;
+use Model\Article as Model;
   // include 'Controller\Article.php';
   // include 'Model\Article.php';
   // include 'Template\Article.php';
   //
   // include 'Controller\AA\BB\CC\Article.php';
 
-$article = new Controller\Article;
+$article = new Article;
 
 echo "Article ID: ".$article->showArticle(341);
 
