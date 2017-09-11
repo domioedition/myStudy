@@ -20,18 +20,16 @@ spl_autoload_register(function($class){
 });
 use Controller\Article;
 use Model\Article as Model;
-  // include 'Controller\Article.php';
-  // include 'Model\Article.php';
-  // include 'Template\Article.php';
-  //
-  // include 'Controller\AA\BB\CC\Article.php';
 
-$article = new Article;
+$article = new Article();
 
 echo "Article ID: ".$article->showArticle(341);
 
-$a1 = new \Controller\AA\BB\CC\Article;
+$a1 = new Controller\AA\BB\CC\Article;
 $a1->someProperty = "test1";
 echo "<br>".$a1->someProperty;
-echo "qwerty";
-?>
+echo "<br>Class name: ".$a1->test();
+
+
+
+$model = new Model();
