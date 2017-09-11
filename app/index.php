@@ -19,11 +19,15 @@ spl_autoload_register(function($class){
 
 });
 use Controller\Article;
-use Model\Article as Model;
-
+//use Model\Article as Model;
+//
 $article = new Article();
 
 echo "Article ID: ".$article->showArticle(341);
+
+
+
+
 
 $a1 = new Controller\AA\BB\CC\Article;
 $a1->someProperty = "test1";
@@ -32,4 +36,4 @@ echo "<br>Class name: ".$a1->test();
 
 
 
-$model = new Model();
+//$model = new Model();

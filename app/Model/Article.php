@@ -2,12 +2,19 @@
 
 namespace Model;
 
-class article
+class Article
 {
 
-    public function __construct()
+    protected $id;
+    public function __construct($id)
     {
-        echo "<h3>Recieving DATA from DB</h3>";
+        $this->id = $id;
+    }
+
+    public function getArticleFromDB($id)
+    {
+        $sql = "SELECT * FROM articles WHERE id = $id";
+        return $sql;
     }
 
 }

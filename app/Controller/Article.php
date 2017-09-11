@@ -7,7 +7,10 @@ class Article
 
     public function showArticle($id)
     {
-        return $id;
+        $article = new \Model\article($id);
+        return $article->getArticleFromDB($id);
     }
+
+
 
 }
